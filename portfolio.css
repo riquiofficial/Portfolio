@@ -1,3 +1,35 @@
-body {
-    font-family: 'Roboto', sans-serif;
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+@font-face {
+    font-family: PopLighter;
+    src: url("./fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: PopRegular;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+body {
+    font-family: PopLighter;
+}
+
+.portfolio {
+    color:white;
+    background:radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
+}
+
+nav {
+    min-height: 10vh;
+    width:90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 0px;
+}
+
+.logo {}
