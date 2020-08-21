@@ -4,48 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Quigley's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">     <link src="portfolio.css"></link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
     <div class="portfolio">
         <header>
-            <nav>
-                <h1 class="name">Richard Quigley</h1>
-                <div class="logo">&#8801</div>
+            <nav class="navbar navbar-light bg-light navbar-expand-lg">
+                <h1 class="navbar-brand">Richard Quigley</h1>
+                <button class="logo navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    &#8801
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#main">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tech">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </div>
             </nav>
             <main>
-                <section class="page intro">
+                <section class="page intro jumbotron">
                     <div class="details">
                         <h3>Creating Websites since:</h3>
                         <p>01/08/2020</p>
                     </div>
                     <div class="headshot">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGP200ZYuOgcw/profile-displayphoto-shrink_200_200/0?e=1603324800&v=beta&t=lPFYoQnSMTaqTd02aPhEfd3IH--3HbZ71NJMKZnQPU0" alt="Richard Quigley's headshot">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGP200ZYuOgcw/profile-displayphoto-shrink_200_200/0?e=1603324800&v=beta&t=lPFYoQnSMTaqTd02aPhEfd3IH--3HbZ71NJMKZnQPU0" alt="headshot">
                         <p>Hi, I'm Richard and I'm a Web Developer.</p>
                     </div>
                 </section>
-                <section class="page main">
-                    <div class="details">
+                <section class="page main jumbotron" id="main">
+                    <div class="details" id="projects">
                         <h3>Design1</h3>
                         <p>10/08/2020</p>
                     </div>
                     <div class="projects">
-                        <img src="couple.png" alt="Design example 1">
+                        <img src="#" alt="Design example 1">
                     </div>
                 </section>
-                <section class="page conclusion">
+                <section class="page conclusion jumbotron" id="tech">
                     <div class="details">
                         <h3>Technologies Used</h3>
                         <div class="tech">
                         </div>
                     </div>
-                    <div class="links">
-                        <img src="./Icons/html5.png" alt="html5">
-                        <img src="./Icons/css3.png" alt="css3">
-                        <img src="./Icons/js3.png" alt="JS">
-                        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="sass">
-                        <img src="https://www.python.org/static/img/python-logo-large.c36dccadd999.png?1576869008" alt="Python">
+                    <div class="links text-center">
+                        <img src="./Icons/html5.png" class="img-fluid img-thumbnail mx-auto border" alt="html5">
+                        <img src="./Icons/css3.png" class="img-fluid img-thumbnail mx-auto border" alt="css3">
+                        <img src="./Icons/js3.png" class="img-fluid img-thumbnail mx-auto border" alt="JS">
+                        <img class="img-fluid img-thumbnail mx-auto border" src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="sass">
+                        <img class="img-fluid img-thumbnail mx-auto border" src="https://www.python.org/static/img/python-logo-large.c36dccadd999.png?1576869008" alt="Python">
+                        <svg color="purple" class="img-thumbnail border" width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-bootstrap" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12 1H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zM4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4z"/>
+                            <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+                        </svg>
                     </div>
                 </section>
                 <div class="pages">
@@ -71,8 +93,11 @@
                 </div>
             </main>
         </header>
+        <footer> Website created by &#169; Richard Quigley 2020</footer>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="portfolio.js"></script>
 </body>
 </html>
