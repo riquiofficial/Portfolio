@@ -104,3 +104,9 @@ nav {
         transform:scale(4);
     }
 }
+
+.links img {
+    width:100px;
+    height:100px;
+    display: inline-block;
+}
