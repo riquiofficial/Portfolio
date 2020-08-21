@@ -3,6 +3,10 @@
     height:100px;
     display: inline-block;
 }
+nav {
+  position:sticky;
+  top:0;
+}
 .headshot img {
     border-radius: 50%;
 }
@@ -13,6 +17,7 @@ main {
 }
 body {
     font-family: PopLighter;
+
 }
 @font-face {
     font-family: PopLighter;
