@@ -96,7 +96,7 @@
                         <circle cx="6" cy="6" r="6" fill="white" />
                         </svg>
                     </div>
-                    <button type="button" class="button" name="button"><a href="#intro">Back to top</a></button>
+                    <button type="button" class="btn btn-dark" name="button"><a href="#intro">Back to top</a></button>
 
                 </div>
             </main>
@@ -125,20 +125,23 @@ $(document).ready(function(){
        window.location.hash = hash;
      });
    } // End if
- });
-});
-// scroll functions
-$(window).scroll(function(e) {
+  })
+  // scroll functions
+  $(window).scroll(function(e) {
 
-    // add/remove class to navbar when scrolling to hide/show
-    var scroll = $(window).scrollTop();
-    if (scroll >= 150) {
-        $('.navbar').addClass("navbar-hide");
-    } else {
-        $('.navbar').removeClass("navbar-hide");
-    }
+  // add/remove class to navbar when scrolling to hide/show
+  var scroll = $(window).scrollTop();
+  if (scroll >= 150) {
+    $(".navbar").addClass("navbar-hide");
+
+  } else {
+    $(".navbar").removeClass("navbar-hide");
+  }
+
 
 });
+});
+</script>
 </script>
 </body>
 </html>
