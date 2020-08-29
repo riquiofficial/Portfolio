@@ -10,7 +10,7 @@
 <body>
     <div class="portfolio">
         <header>
-            <nav class="navbar navbar-light bg-light sticky-top navbar-expand-lg">
+            <nav id="nav" class="navbar navbar-light sticky-top navbar-expand-lg">
                 <h1 class="navbar-brand">Richard Quigley</h1>
                 <button class="logo navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     &#8801
@@ -40,7 +40,7 @@
                         <p>01/08/2020</p>
                     </div>
                     <div class="headshot">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGP200ZYuOgcw/profile-displayphoto-shrink_200_200/0?e=1603324800&v=beta&t=lPFYoQnSMTaqTd02aPhEfd3IH--3HbZ71NJMKZnQPU0" alt="headshot">
+                        <img src="./couple.png" alt="headshot">
                         <p>Hi, I'm Richard and I'm a Web Developer.</p>
                     </div>
                 </section>
@@ -107,41 +107,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="portfolio.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
- // Add smooth scrolling to all links
- $("a").on('click', function(event) {
-
-   if (this.hash !== "") {
-     event.preventDefault();
-
-     var hash = this.hash;
-
-     $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 800, function(){
-
-       window.location.hash = hash;
-     });
-   } // End if
-  })
-  // scroll functions
-  $(window).scroll(function(e) {
-
-  // add/remove class to navbar when scrolling to hide/show
-  var scroll = $(window).scrollTop();
-  if (scroll >= 150) {
-    $(".navbar").addClass("navbar-hide");
-
-  } else {
-    $(".navbar").removeClass("navbar-hide");
-  }
-
-
-});
-});
-</script>
-</script>
 </body>
 </html>

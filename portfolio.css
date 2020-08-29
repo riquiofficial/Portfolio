@@ -1,22 +1,25 @@
+html {
+    scroll-behavior: smooth;
+} 
+
 .links img {
     width:100px;
     height:100px;
     display: inline-block;
 }
-nav {
+#nav {
   position:sticky;
   top:0;
+  opacity: 1;
+  transition: top 0.5s
 }
 
+#nav:hover {
+    top:0;
+}
 
 .navbar {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
-.navbar-hide {
-    pointer-events: none;
-    opacity: 0;
+    background-color: rgb(153, 29, 29);
 }
 
 .headshot img {
