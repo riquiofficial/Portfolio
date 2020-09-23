@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.links img {
+    width:100px;
+    height:100px;
+    display: inline-block;
+}
+#nav {
+  position:sticky;
+  top:0;
+  opacity: 1;
+  transition: top 0.5s
+}
+
+#nav:hover {
+    top:0;
+}
+
+.navbar {
+    background-color: rgb(153, 29, 29);
+}
+
+.headshot img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+main {
+    text-align: center;
+    color:white;
+    background: radial-gradient(rgba(29,122,105,1), rgba(150,190,184,1));
+}
+body {
+    font-family: PopLighter;
+
+}
+@font-face {
+    font-family: PopLighter;
+    src: url("./fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: PopRegular;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+.jumbotron{
+    color:white;
+    background:radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
+    min-height:100vh;
+}
