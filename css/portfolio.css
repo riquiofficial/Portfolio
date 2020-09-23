@@ -1,4 +1,5 @@
 html {
+    font-family: PopLighter;
     scroll-behavior: smooth;
 }
 
@@ -32,10 +33,7 @@ main {
     color:white;
     background: radial-gradient(rgba(29,122,105,1), rgba(150,190,184,1));
 }
-body {
-    font-family: PopLighter;
 
-}
 @font-face {
     font-family: PopLighter;
     src: url("./fonts/Poppins-Light.ttf");
@@ -48,4 +46,17 @@ body {
     color:white;
     background:radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
     min-height:100vh;
+}
+
+.card {
+    display:flex;
+    color:black;
+    align-self:center;
+}
+
+.headshot h1 {
+    margin:40px;
+}
+.details h1 {
+    margin:30px;
 }
