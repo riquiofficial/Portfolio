@@ -55,8 +55,7 @@ nav ul li a {
     background-size:cover;
     height:500px;
     width:100%;
-    background-size:cover;
-    background-position:50% 50%;
+    background-position: top;
 }
 
 .welcome h1 {
