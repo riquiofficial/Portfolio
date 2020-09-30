@@ -95,6 +95,63 @@ body {
     font-weight:700;
     animation: moveInLeft 1s ease-out;
    text-transform:lowercase;
+   margin-bottom: 100px;
+}
+
+.heading-primary--form {
+    display: block;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:0.5rem;
+    animation: moveInLeft 1s ease-out;
+}
+
+.contact {
+    height: 95vh;
+    background-image: linear-gradient(
+        to top left, 
+        rgba(62, 182, 154, 0.7), 
+        rgba(147, 90, 252, 0.7)),
+        url(../images/donald-edgar--s2wjk7wVCc-unsplash\(1\).jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
+    position: relative;
+}
+
+.contact__form {
+    color: rgb(238, 234, 234);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    font-weight:700;
+    text-transform: capitalize;  
+}
+
+.contact__form-name {
+    margin-top: 25px;
+    display:block;
+    font-size: 2rem;
+    font-weight:700;
+
+}
+
+.contact__form-email {
+    margin-top: 25px;
+    display:block;
+    font-size: 2rem;
+    font-weight:700;
+    
+}
+.contact__form-message {
+    margin-top: 30px;
+    display:block;
+    font-size: 2rem;
+    font-weight:700;
+    width:30%;
+    height:30%;
 }
 
 @keyframes moveInLeft {
@@ -190,6 +247,10 @@ body {
 .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
+}
+
+.btn--send {
+    width:40%;
 }
 
 @media only screen and (max-width:460px) {

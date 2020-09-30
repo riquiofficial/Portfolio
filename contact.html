@@ -16,9 +16,26 @@
       <h1 class="heading-primary">
         <span class="heading-primary--email">email: trucis@gmail.com</span>
         <span class="heading-primary--phone">phone: (+44) 07393 296 781</span>
+        <span class="heading-primary--form">Or post a message below</span>
       </h1>
     </div>
   </header>
+  <div class="contact">
+    <form action="/thanks.html" class="contact__form" name="contact" method="POST" data-netlify="true">
+      <p>
+        <label class="contact__form-name">Your Name:<br> <input type="text" name="name" /></label>   
+      </p>
+      <p>
+        <label class="contact__form-email" required>Your Email:<br> <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label class="contact__form-message" required>Message:<br> <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit" class="btn btn--send">Send</button>
+      </p>
+    </form>
+  </div>
   <footer> Website created by &#169; Richard Quigley 2020</footer>
 
   <script src="portfolio.js"></script>
