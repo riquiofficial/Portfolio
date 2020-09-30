@@ -193,11 +193,11 @@ body {
 
 @media only screen and (max-width:460px) {
     [class="heading-primary"] {
-        margin-top:50%;
+        margin-top:60%;
     }
     [class*="heading-primary--main"] {
         font-size:3rem;
-        letter-spacing: 1.5rem;
+        letter-spacing: 1rem;
         font-weight:700;
     }
     [class*="heading-primary--sub"] {
