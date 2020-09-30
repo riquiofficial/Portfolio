@@ -84,7 +84,8 @@ body {
     font-size: 2rem;
     font-weight:700;
     animation: moveInRight 1s ease-out;
-    text-transform: capitalize;
+    text-transform: lowercase;
+    margin-top: 45%;
 }
 
 .heading-primary--phone {
@@ -188,4 +189,34 @@ body {
 .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
+}
+
+@media only screen and (max-width:460px) {
+    [class="heading-primary"] {
+        margin-top:50%;
+    }
+    [class*="heading-primary--main"] {
+        font-size:3rem;
+        letter-spacing: 1.5rem;
+        font-weight:700;
+    }
+    [class*="heading-primary--sub"] {
+        font-size:2rem;
+        letter-spacing: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:460px) and (max-width:800px) {
+    [class="heading-primary"] {
+        margin-top:50%;
+    }
+    [class*="heading-primary--main"] {
+        font-size:4rem;
+        letter-spacing: 2rem;
+        font-weight:700;
+    }
+    [class*="heading-primary--sub"] {
+        font-size:3rem;
+        letter-spacing: 1.5rem;
+    }
 }
