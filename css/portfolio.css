@@ -81,7 +81,7 @@ body {
 
 .heading-primary--email {
     display:block;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight:700;
     animation: moveInRight 1s ease-out;
     text-transform: lowercase;
@@ -91,7 +91,7 @@ body {
 .heading-primary--phone {
     margin-top: 25px;
     display:block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight:700;
     animation: moveInLeft 1s ease-out;
    text-transform:lowercase;
@@ -100,7 +100,7 @@ body {
 
 .heading-primary--form {
     display: block;
-    font-size:2rem;
+    font-size:2.5rem;
     font-weight:700;
     letter-spacing:0.5rem;
     animation: moveInLeft 1s ease-out;
@@ -143,15 +143,13 @@ body {
     display:block;
     font-size: 2rem;
     font-weight:700;
-    
 }
+
 .contact__form-message {
     margin-top: 30px;
     display:block;
     font-size: 2rem;
-    font-weight:700;
-    width:30%;
-    height:30%;
+
 }
 
 @keyframes moveInLeft {
@@ -236,7 +234,7 @@ body {
 }
 
 .btn--white::after {
-    background-color: #fff;
+    background-color: rgb(238, 234, 234);
 }
 
 .btn:hover::after {
@@ -251,11 +249,32 @@ body {
 
 .btn--send {
     width:40%;
+    padding:0.5rem;
+    border-radius: 10rem;
+    font-size:2.5rem;
+    border-style: none;
+    color:#777;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    margin-top:1rem;
+
+}
+
+.btn--send:hover {
+    background-color: rgb(224, 215, 215);
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+
+
+.btn--send:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 @media only screen and (max-width:460px) {
-    [class="heading-primary"] {
-        margin-top:60%;
+    [class="heading-primary"]{
+        margin-top:50%;
     }
     [class*="heading-primary--main"] {
         font-size:3rem;
@@ -266,10 +285,22 @@ body {
         font-size:2rem;
         letter-spacing: 1.5rem;
     }
+    [class="heading-primary--email"] {
+        margin-top:52vh;
+        font-size:2.5rem;
+    }
+    [class="heading-primary--form"] {
+        margin-top:20px;
+        font-size:1.5rem;
+    }
+    [class="heading-primary--phone"] {
+        margin-bottom: 5px;
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (min-width:460px) and (max-width:800px) {
-    [class="heading-primary"] {
+    [class="heading-primary"]{
         margin-top:50%;
     }
     [class*="heading-primary--main"] {
@@ -280,5 +311,17 @@ body {
     [class*="heading-primary--sub"] {
         font-size:3rem;
         letter-spacing: 1.5rem;
+    }
+    [class="heading-primary--email"] {
+        margin-top:52vh;
+        font-size:2.5rem;
+    }
+    [class="heading-primary--form"] {
+        margin-top:20px;
+        font-size:1.5rem;
+    }
+    [class="heading-primary--phone"] {
+        margin-bottom: 5px;
+        font-size: 1.7rem;
     }
 }
