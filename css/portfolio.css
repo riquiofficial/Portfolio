@@ -39,10 +39,12 @@ body {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    z-index: 4;
 }
 
 .header__logo {
     height: 16rem;
+  
 }
 
 .header__text-box {
@@ -248,15 +250,15 @@ body {
 }
 
 .btn--send {
-    width:40%;
-    padding:0.5rem;
+    width:14rem;
     border-radius: 10rem;
     font-size:2.5rem;
     border-style: none;
+    background-color: rgb(238, 234, 234);
     color:#777;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     margin-top:1rem;
-
+    padding: 1.5rem 4rem;
 }
 
 .btn--send:hover {
@@ -265,12 +267,28 @@ body {
     box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
-
+.btn--send::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
 
 .btn--send:active {
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
+.btn--send:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity:0;
+}
+
 
 @media only screen and (max-width:460px) {
     [class="heading-primary"]{
