@@ -66,7 +66,7 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -76,7 +76,7 @@ body {
     display: block;
     font-size:2rem;
     font-weight:700;
-    letter-spacing:1.75rem;
+    letter-spacing:1.5rem;
     animation: moveInRight 1s ease-out;
 
 }
@@ -109,7 +109,7 @@ body {
 }
 
 .contact {
-    height: 95vh;
+    height: 750px;
     background-image: linear-gradient(
         to top left,
         rgba(62, 182, 154, 0.7),
@@ -121,38 +121,138 @@ body {
     position: relative;
 }
 
-.contact__form {
-    color: rgb(238, 234, 234);
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    font-size: 2rem;
-    font-weight:700;
-    text-transform: capitalize;
+.portfolio {
+    height: 750px;
+    background-image: linear-gradient(
+        to top left,
+        rgba(62, 182, 154, 0.7),
+        rgba(147, 90, 252, 0.7)),
+        url(../images/donald-edgar--s2wjk7wVCc-unsplash\(1\).jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
 }
 
-.contact__form-name {
-    margin-top: 25px;
-    display:block;
-    font-size: 2rem;
-    font-weight:700;
-
+.portfolio__projects {
+padding: 100px 50px 50px 50px;
+font-size: 2rem;
+color: rgb(230, 228, 228);
 }
 
-.contact__form-email {
-    margin-top: 25px;
-    display:block;
-    font-size: 2rem;
-    font-weight:700;
+.portfolio__projects-heading {
+    text-align: center;
+    font-size: 3rem;    
+    letter-spacing: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.contact__form-message {
-    margin-top: 30px;
-    display:block;
-    font-size: 2rem;
-
+.porfolio__projects--1 {
+    background: white;
+    width: 100%;
+    height: 200px;
 }
+
+.portfolio__projects-secondary-heading {
+    text-align: center;
+}
+
+.portfolio__image {
+    display: block;
+    margin-left: auto;
+    width: 100%;
+}
+
+.contact-form {
+padding: 150px 50px 50px 50px;}
+
+.form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  
+  .form__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    color: rgb(29, 29, 29);
+    background-color: rgba(218, 218, 218, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    .form__input::-webkit-input-placeholder {
+      color: rgb(70, 70, 70); }
+  
+  .form__label {
+    font-size: 1.2rem;
+    color: rgb(212, 212, 212);
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto; }
+    .row:not(:last-child) {
+      margin-bottom: 8rem; }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .row [class^="col-"] {
+      float: left; }
+      .row [class^="col-"]:not(:last-child) {
+        margin-right: 6rem; }
+    .row .col-1-of-2 {
+      width: calc((100% - 6rem) / 2); }
+    .row .col-1-of-3 {
+      width: calc((100% - 2 * 6rem) / 3); }
+    .row .col-2-of-3 {
+      width: calc((2 * ((100% - 2 * 6rem) / 3)) + 6rem); }
+    .row .col-1-of-4 {
+      width: calc((100% - 3 * 6rem) / 4); }
+    .row .col-2-of-4 {
+      width: calc((2 * (100% - 3 * 6rem) / 4) + 6rem); }
+    .row .col-3-of-4 {
+      width: calc((3 * (100% - 3 * 6rem) / 4) + 6rem * 2); }
+
+      @media only screen and (max-width: 702px) {
+
+        .row .col-1-of-2 {
+          width:100%;
+          padding: 2rem;
+          margin-bottom:3rem;
+          height: 200px;
+        }
+        .row .col-1-of-4 {
+          width:100%;
+          padding:0 25% 2rem 25%;
+          
+        }
+    
+        .row .col-1-of-3 {
+          width:100%;
+          padding:0 25% 2rem 25%;
+        }
+
+        html {
+            font-size: 50%;
+        }
+    
+      }
 
 @keyframes moveInLeft {
     0% {
@@ -297,12 +397,12 @@ body {
     }
     [class*="heading-primary--main"] {
         font-size:3rem;
-        letter-spacing: 1rem;
+        letter-spacing: 1.2rem;
         font-weight:700;
     }
     [class*="heading-primary--sub"] {
         font-size:2rem;
-        letter-spacing: 1.5rem;
+        letter-spacing: 0.8rem;
     }
     [class="heading-primary--email"] {
         margin-top:52vh;

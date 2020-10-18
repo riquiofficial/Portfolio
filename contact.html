@@ -22,16 +22,37 @@
     </div>
   </header>
   <div class="contact">
-    <form action="/thanks.html" class="contact__form" name="contact" method="POST" data-netlify="true">
-      
-        <label class="contact__form-name">Your Name:<br> <input type="text" name="name" /></label>   
-     
-        <label class="contact__form-email">Your Email:<br> <input type="email" name="email" required></label>
-      
-        <label class="contact__form-message">Message:<br> <textarea name="message" required></textarea></label>
-      
-        <button type="submit" class="btn--send">Send</button>
-    </form>
+
+    <div class="contact__bg">
+      <div class="contact-form">
+        <div class="row">
+              <form action="/thanks.html" class="contact__form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                  <!-- <div class="form__group">
+                      <input type="text" id="name" class="form__input" placeholder="Full Name" required>
+                      <label for="name" class="form__label">Full Name</label>
+                  </div> -->
+
+                  <div class="form__group">
+
+                      <input class="form__input" type="text" id="name" name="name" placeholder="Your Name"/>
+                      <label class="form__label" for="name">Your Name 	&uarr;</label>   
+
+                  </div>
+
+                  <div class="form__group">
+                      <input class="form__input" type="email" name="email" placeholder="Your Email" required>
+                      <label class="form__label" for="email">Your Email 	&uarr;</label>
+                  </div>  
+                  <br>
+                  <textarea class="form__input" name="message" placeholder="Your message" required></textarea>
+                  <label class="form__label" for="message">Your Message	&uarr;</label>
+
+                  <div data-netlify-recaptcha="true"></div>
+                  <button type="submit" class="btn--send">Send</button>
+              </form>
+            </div>
+          </div>
+    </div>
   </div>
   <footer> Website created by &#169; Richard Quigley 2020</footer>
 
