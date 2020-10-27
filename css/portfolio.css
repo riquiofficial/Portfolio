@@ -48,7 +48,7 @@ body {
         to bottom right,
         rgba(87, 250, 212, 0.8),
         rgba(147, 90, 252, 0.8)),
-        url(../images/computer.jpg);
+        url(../images/computertest.webp);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
@@ -134,23 +134,11 @@ body {
         to top left,
         rgba(62, 182, 154, 0.7),
         rgba(147, 90, 252, 0.7)),
-        url(../images/GOMA.jpg);
+        url(../images/GOMA.webp);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
     position: relative;
-}
-
-.portfolio {
-    height: 750px;
-    background-image: linear-gradient(
-        to top left,
-        rgba(62, 182, 154, 0.7),
-        rgba(147, 90, 252, 0.7)),
-        url(../images/GOMA.jpg);
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
 }
 
 .portfolio__projects {
