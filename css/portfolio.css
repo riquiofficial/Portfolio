@@ -48,7 +48,7 @@ body {
         to bottom right,
         rgba(87, 250, 212, 0.8),
         rgba(147, 90, 252, 0.8)),
-        url(../images/computertest.webp);
+        url(../images/computer.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 6%, 100% 0,100% 94%, 0 100%);
