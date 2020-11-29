@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-  height: 650px;
+  height: 100vh;
   background-image: linear-gradient(
       to bottom right,
       rgba(87, 250, 212, 0.8),
@@ -54,7 +54,7 @@ body {
     url(../images/computer.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
   position: relative;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .contact {
-  height: 750px;
+  height: 140vh;
   background-image: linear-gradient(
       to top left,
       rgba(62, 182, 154, 0.7),
@@ -139,7 +139,7 @@ body {
     url(../images/GOMA3.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
   position: relative;
 }
 
