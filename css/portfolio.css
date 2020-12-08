@@ -143,6 +143,20 @@ body {
   position: relative;
 }
 
+.projects {
+  min-height: 140vh;
+  background-image: linear-gradient(
+      to top left,
+      rgba(62, 182, 154, 0.7),
+      rgba(147, 90, 252, 0.7)
+    ),
+    url(../images/GOMA3.webp);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+  position: relative;
+}
+
 .portfolio__projects {
   padding: 100px 50px 50px 50px;
   font-size: 2rem;
@@ -156,6 +170,7 @@ body {
 
 .card {
   background: #250f2e;
+  width: 100%;
   border-radius: 8px;
   padding: 50px;
 }
@@ -274,7 +289,7 @@ body {
     width: 100%;
     padding: 2rem;
     margin-bottom: 3rem;
-    height: 200px;
+    min-height: 200px;
   }
   .row .col-1-of-4 {
     width: 100%;
