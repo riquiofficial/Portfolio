@@ -301,6 +301,14 @@ body {
     padding: 0 25% 2rem 25%;
   }
 
+  .row:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
   html {
     font-size: 50%;
   }
