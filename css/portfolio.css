@@ -173,6 +173,67 @@ body {
   width: 100%;
   border-radius: 8px;
   padding: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+}
+
+.arrow {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  transition: all 1s ease;
+  animation: arrowMove 2.5s ease-out infinite;
+}
+
+.arrow--bottom {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(180deg);
+  text-align: center;
+  transition: all 1s ease;
+  animation: downArrowMove 2.5s ease-out infinite;
+}
+
+@keyframes arrowMove {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -1rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -1rem);
+  }
+}
+@keyframes downArrowMove {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -1rem) rotate(180deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 0) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -1rem) rotate(180deg);
+  }
 }
 
 .portfolio__projects-heading {

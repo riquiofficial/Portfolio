@@ -1,56 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Richard Quigley | Portfolio</title>
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/portfolio.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__logo-box">
-      <a href="index.html"><img src="./Icons/logo_transparent.png" alt="logo" class="header__logo"></a>
-    </div>
-    <div class="header__text-box">
-      <h1 class="heading-primary">
-        <span class="heading-primary--email">email: richard@rqwebdev.com</span>
-        <span class="heading-primary--phone">phone: (+44) 07393 296 781</span>
-        <span class="heading-primary--form">Or post a message below</span>
-      </h1>
-    </div>
-  </header>
-  <div class="contact">
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__logo-box">
+        <a href="index.html"
+          ><img
+            src="./Icons/logo_transparent.png"
+            alt="logo"
+            class="header__logo"
+        /></a>
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--email"
+            >email: richard@rqwebdev.com</span
+          >
+          <span class="heading-primary--phone">phone: (+44) 07393 296 781</span>
+          <span class="heading-primary--form">Or post a message below</span>
+        </h1>
+      </div>
+      <a href="#contact"
+        ><img class="arrow" src="./Icons/arrow.svg" alt="down arrow"
+      /></a>
+    </header>
+    <div class="contact" id="contact">
       <div class="contact-form">
         <div class="row">
-              <form action="/thanks.html" class="contact__form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                  <!-- <div class="form__group">
+          <form
+            action="/thanks.html"
+            class="contact__form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <!-- <div class="form__group">
                       <input type="text" id="name" class="form__input" placeholder="Full Name" required>
                       <label for="name" class="form__label">Full Name</label>
                   </div> -->
 
-                  <div class="form__group">
+            <div class="form__group">
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+              <label class="form__label" for="name">Your Name &uarr;</label>
+            </div>
 
-                      <input class="form__input" type="text" id="name" name="name" placeholder="Your Name"/>
-                      <label class="form__label" for="name">Your Name 	&uarr;</label>   
+            <div class="form__group">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <label class="form__label" for="email">Your Email &uarr;</label>
+            </div>
+            <br />
+            <textarea
+              class="form__input"
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <label class="form__label" for="message">Your Message &uarr;</label>
 
-                  </div>
-
-                  <div class="form__group">
-                      <input class="form__input" type="email" name="email" placeholder="Your Email" required>
-                      <label class="form__label" for="email">Your Email 	&uarr;</label>
-                  </div>  
-                  <br>
-                  <textarea class="form__input" name="message" placeholder="Your message" required></textarea>
-                  <label class="form__label" for="message">Your Message	&uarr;</label>
-
-                  <div data-netlify-recaptcha="true"></div>
-                  <button type="submit" class="btn--send">Send</button>
-              </form>
-          </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="btn--send">Send</button>
+          </form>
+        </div>
+      </div>
+      <a href="#header"
+        ><img class="arrow--bottom" src="./Icons/arrow.svg" alt="down arrow"
+      /></a>
     </div>
-  </div>
-  <footer> Website created by &#169; Richard Quigley 2020</footer>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</body>
+    <footer>Website created by &#169; Richard Quigley 2020</footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
 </html>

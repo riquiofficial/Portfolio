@@ -14,7 +14,7 @@
     <link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__logo-box">
         <a href="index.html"
           ><img
@@ -32,11 +32,16 @@
           >Get in touch</a
         >
       </div>
+      <div class="header__arrow">
+        <a href="#projects"
+          ><img class="arrow" src="./Icons/arrow.svg" alt="down arrow"
+        /></a>
+      </div>
     </header>
     <main>
       <section class="projects">
         <div class="portfolio__projects">
-          <h1 class="portfolio__projects-heading">PROJECTS</h1>
+          <h1 class="portfolio__projects-heading" id="projects">PROJECTS</h1>
 
           <div class="row">
             <div class="col-1-of-2 card">
@@ -217,6 +222,9 @@
             </div>
           </div>
         </div>
+        <a href="#header"
+          ><img class="arrow--bottom" src="./Icons/arrow.svg" alt="down arrow"
+        /></a>
       </section>
     </main>
     <footer>Website created by &#169; Richard Quigley 2020</footer>
