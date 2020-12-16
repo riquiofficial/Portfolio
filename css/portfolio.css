@@ -77,6 +77,23 @@ body {
   text-align: center;
 }
 
+.anchor {
+  text-decoration: none;
+  color: rgb(238, 234, 234);
+}
+
+.anchor:hover {
+  color: rgb(212, 212, 212);
+}
+
+.header__text-box--2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
 .heading-primary {
   color: rgb(238, 234, 234);
   text-transform: uppercase;
@@ -240,7 +257,7 @@ body {
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .portfolio__description {
@@ -531,7 +548,7 @@ body {
     letter-spacing: 0.8rem;
   }
   [class="heading-primary--email"] {
-    margin-top: 52vh;
+    margin-top: 52px;
     font-size: 2.5rem;
   }
   [class="heading-primary--form"] {
