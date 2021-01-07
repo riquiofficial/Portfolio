@@ -86,6 +86,17 @@ body {
   color: rgb(212, 212, 212);
 }
 
+.header__social-links {
+  z-index: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header__social-links-anchor {
+  margin: 2px;
+}
+
 .header__text-box--2 {
   position: absolute;
   top: 40%;
