@@ -604,6 +604,9 @@ body {
     padding: 30px;
     font-size: 1.8rem;
   }
+  .header__social-links-anchor {
+    margin: 1px;
+  }
   .portfolio__projects-heading {
     padding: 50px 0 50px 0;
   }
