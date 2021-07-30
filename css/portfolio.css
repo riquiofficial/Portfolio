@@ -285,6 +285,8 @@ body {
   display: block;
   margin-left: auto;
   width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 .contact-form {
