@@ -403,14 +403,6 @@ body {
   html {
     font-size: 50%;
   }
-
-  .contact {
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
-  }
-
-  .projects {
-    clip-path: polygon(0 1.8%, 100% 0, 100% 98.2%, 0 100%);
-  }
 }
 
 @keyframes moveInLeft {
