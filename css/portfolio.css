@@ -54,7 +54,7 @@ body {
     url(../images/computer.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 100%  , 0 100%);
   position: relative;
 }
 
@@ -167,7 +167,7 @@ body {
     url(../images/GOMA3.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  margin-top: 35px;
   position: relative;
 }
 
@@ -181,7 +181,7 @@ body {
     url(../images/GOMA3.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 1.8%, 100% 0, 100% 98.2%, 0 100%);
+  margin-top: 35px;
   position: relative;
 }
 
