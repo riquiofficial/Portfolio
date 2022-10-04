@@ -1,2 +1,3 @@
 # Portfolio
-Website portfolio for Richard Quigley
+
+Extremely basic website portfolio built on html and css - nothing else required
