@@ -212,7 +212,7 @@ body {
 }
 
 .arrow {
-  width: 5%;
+  width: 40px;
   height: auto;
   position: absolute;
   bottom: 10%;
@@ -224,7 +224,7 @@ body {
 }
 
 .arrow--bottom {
-  width: 5%;
+  width: 40px;
   height: auto;
   position: absolute;
   bottom: 1%;
