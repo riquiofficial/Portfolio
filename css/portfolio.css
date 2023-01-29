@@ -12,9 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2)
-      format("woff2");
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
   unicode-range: U+0000-00FF;
 }
 
@@ -24,9 +22,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Lato Bold"), local("Lato-Bold"),
-    url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2)
-      format("woff2");
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format("woff2");
   unicode-range: U+0000-00FF;
 }
 
@@ -46,15 +42,10 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(87, 250, 212, 0.8),
-      rgba(147, 90, 252, 0.8)
-    ),
-    url(../images/computer.webp);
+  background-image: linear-gradient(to bottom right, rgba(87, 250, 212, 0.8), rgba(147, 90, 252, 0.8)), url(../images/computer.webp);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 4%, 100% 0, 100% 100%  , 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   position: relative;
 }
 
@@ -159,12 +150,7 @@ body {
 
 .contact {
   height: 140vh;
-  background-image: linear-gradient(
-      to top left,
-      rgba(62, 182, 154, 0.7),
-      rgba(147, 90, 252, 0.7)
-    ),
-    url(../images/GOMA3.webp);
+  background-image: linear-gradient(to top left, rgba(62, 182, 154, 0.7), rgba(147, 90, 252, 0.7)), url(../images/GOMA3.webp);
   background-size: cover;
   background-position: top;
   margin-top: 35px;
@@ -173,12 +159,7 @@ body {
 
 .projects {
   min-height: 140vh;
-  background-image: linear-gradient(
-      to top left,
-      rgba(62, 182, 154, 0.7),
-      rgba(147, 90, 252, 0.7)
-    ),
-    url(../images/GOMA3.webp);
+  background-image: linear-gradient(to top left, rgba(62, 182, 154, 0.7), rgba(147, 90, 252, 0.7)), url(../images/GOMA3.webp);
   background-size: cover;
   background-position: top;
   margin-top: 35px;
@@ -192,13 +173,14 @@ body {
 }
 
 .btn--portfolio {
-  margin: 15px;
+  margin: 5px 10px;
   text-align: center;
 }
 
 .card {
   background: #250f2e;
-  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
   border-radius: 8px;
   padding: 50px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -227,7 +209,7 @@ body {
   width: 40px;
   height: auto;
   position: absolute;
-  bottom: 1%;
+  bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0) rotate(180deg);
   text-align: center;
@@ -287,6 +269,14 @@ body {
   width: 100%;
   height: 260px;
   object-fit: cover;
+}
+
+/* Show each project with dynamic size in grid, only one per row on mobile */
+.portfolio__projects-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-gap: 2rem;
+  justify-content: center;
 }
 
 .contact-form {
@@ -394,10 +384,6 @@ body {
 
   .row:not(:last-child) {
     margin-bottom: 0;
-  }
-
-  .card {
-    padding: 20px;
   }
 
   html {
