@@ -177,6 +177,10 @@ body {
   text-align: center;
 }
 
+.footer {
+  color: white;
+}
+
 .card {
   background: #250f2e;
   min-width: 350px;
