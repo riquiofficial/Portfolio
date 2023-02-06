@@ -1,0 +1,29 @@
+{
+  "name": "rq-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Richard Quigley",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riquiofficial/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "developer",
+    "full",
+    "stack"
+  ],
+  "author": "Richard Quigley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riquiofficial/Portfolio/issues"
+  },
+  "homepage": "https://github.com/riquiofficial/Portfolio#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
