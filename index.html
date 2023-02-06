@@ -1,89 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Richard Quigley | Portfolio</title>
-    <meta name="description" content="Richard Quigley's portfolio website showcasing his web development skills and projects">
-    <meta name="robots" content="index, follow">
-    <meta name="canonical" href="https://www.rqwebdev.com/">
-    <meta name="googlebot" content="index, follow">
-    <meta name="author" content="Richard Quigley">
-    <meta name="keywords" content="Richard Quigley, Portfolio, Web Development, Skills, Projects">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="image" property="og:image" content="https://www.rqwebdev.com/images/screenshot.png">
-    <meta name="image" property="og:image:secure_url" content="https://www.rqwebdev.com/images/screenshot.png">
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#000000">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-    <link id="shortcut icon" href="favicon.ico" rel="icon" type="image/x-icon">
-  </head>
-  <body>
-    <div class="cover">
-      <header class="header" id="header">
-        <div class="header__logo-box">
-          <a href="index.html"
-            ><img
-              src="./Icons/logo_transparent.png"
-              alt="logo"
-              class="header__logo"
-          /></a>
-        </div>
-        <div class="header__social-links">
-          <a href="https://www.facebook.com/rqwebdev" aria-label="facebook business page" class="header__social-links-anchor"><svg class="header__social-links--facebook" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
-          <a href="https://www.linkedin.com/in/richard-quigley-48917a15b/" aria-label="linkedin profile" class="header__social-links-anchor"><svg class="header__social-links--linkedin" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-          <a href="https://twitter.com/rqwebdev" aria-label="twitter profile" class="header__social-links-anchor"><svg class="header__social-links--twitter" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
-          <!-- <svg class="header__social-links--dribbble" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.01 13.188c.617 1.613 1.072 3.273 1.361 4.973-2.232.861-4.635.444-6.428-.955 1.313-2.058 2.989-3.398 5.067-4.018zm-.53-1.286c-.143-.32-.291-.638-.447-.955-1.853.584-4.068.879-6.633.883l-.01.17c0 1.604.576 3.077 1.531 4.223 1.448-2.173 3.306-3.616 5.559-4.321zm-3.462-5.792c-1.698.863-2.969 2.434-3.432 4.325 2.236-.016 4.17-.261 5.791-.737-.686-1.229-1.471-2.426-2.359-3.588zm7.011.663c-1.117-.862-2.511-1.382-4.029-1.382-.561 0-1.102.078-1.621.21.873 1.174 1.648 2.384 2.326 3.625 1.412-.598 2.52-1.417 3.324-2.453zm7.971-1.773v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c0-4.418-3.582-8-8-8s-8 3.582-8 8 3.582 8 8 8 8-3.582 8-8zm-6.656-1.542c.18.371.348.745.512 1.12 1.439-.248 3.018-.233 4.734.049-.084-1.478-.648-2.827-1.547-3.89-.922 1.149-2.16 2.055-3.699 2.721zm1.045 2.437c.559 1.496.988 3.03 1.279 4.598 1.5-1.005 2.561-2.61 2.854-4.467-1.506-.261-2.883-.307-4.133-.131z"/></svg> -->
-          <a href="https://github.com/riquiofficial" aria-label="github profile" class="header__social-links-anchor"><svg class="header__social-links--github" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
-          <!-- <svg class="header__social-links--stackoverflow" fill="#EEEAEA" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.512 8.272l5.532 3.243-.686 1.162-5.533-3.243.687-1.162zm-1.456 3.113l6.185 1.739-.332 1.23-6.204-1.667.351-1.302zm-.672 2.813l6.498.65-.117 1.28-6.504-.586.123-1.344zm-.193 2.469h6.667v1.333h-6.667v-1.333zm8.833 3.333h-11v-7h1v6h9v-6h1v7zm-.852-8.704l-3.56-5.219 1.115-.76 3.559 5.219-1.114.76zm1.356-.841l-1.08-6.224 1.328-.231 1.082 6.224-1.33.231z"/></svg> -->
-        </div>
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">I'm Richard</span>
-            <span class="heading-primary--sub">A web developer</span>
-          </h1>
-          <a href="contact.html" class="btn btn--white btn--animated"
-            >Get in touch</a
-          >
-        </div>
-        <div class="header__arrow">
-          <a href="#projects"
-            ><img class="arrow" src="./Icons/arrow.svg" alt="down arrow"
-          /></a>
-        </div>
-      </header>
-      <main>
-        <section class="projects">
-          <div class="portfolio__projects">
-            <h1 class="portfolio__projects-heading" id="projects">PROJECTS</h1>
-            <div id="inject-projects" class="portfolio__projects-projects">
-            </div>
-            </div>
-            <a href="#header"
-            ><img
-              class="arrow--bottom"
-              src="./Icons/arrow.svg"
-              alt="up arrow"
-          /></a>
+
+<head>
+  <title>Richard Quigley | Portfolio</title>
+  <meta name="description"
+    content="Richard Quigley's portfolio website showcasing his web development skills and projects" />
+  <meta name="robots" content="index, follow" />
+  <meta name="canonical" href="https://www.rqwebdev.com/" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="author" content="Richard Quigley" />
+  <meta name="keywords" content="Richard Quigley, Portfolio, Web Development, Skills, Projects" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="image" property="og:image" content="https://www.rqwebdev.com/images/screenshot.png" />
+  <meta name="image" property="og:image:secure_url" content="https://www.rqwebdev.com/images/screenshot.png" />
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="./css/portfolio.min.css"> -->
+  <link href="/css/output.css" rel="stylesheet" />
+  <!-- TODO figure out why preload not working -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" as="font" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="font" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet" />
+  <link id="shortcut icon" href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body class="relative text-white bg-main">
+
+
+
+
+  <div class="m-8">
+
+
+    <header id="header">
+      <div class="flex flex-row items-center justify-between my-4">
+        <h1 class="p-2 cursor-pointer sm:p-4 logo">RQ</h1>
+        <nav>
+          <ul class="flex items-center text-sm font-medium sm:text-lg">
+            <li class="p-2 cursor-pointer">About</li>
+            <li class="p-2 cursor-pointer">Projects</li>
+            <li class="py-2 cursor-pointer md:px-2">
+              <div class="rounded-full bg-gradient-to-r from-light-gold to-dark-gold">
+                <button
+                  class="px-2 sm:px-4 py-1 m-0.5 border-2 border-transparent rounded-full bg-main">Contact</button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="my-10 md:mx-10 lg:mx-20">
+        <h1
+          class="pb-4 text-4xl font-bold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-light-gold to-dark-gold"">Richard Quigley</h1>
+            <h2 class="mt-4 mb-8 text-2xl font-bold  sm:text-4xl">Full-stack Web Developer</h2>
+          <p class="text-1xl sm:text-2xl">
+            Based in Glasgow, UK, I'm a software developer open to new opportunities
+          </p>
+          <div class="flex items-center mt-8 ">
+            <span class="rounded-full bg-gradient-to-r from-dark-gold via-light-gold to-dark-gold">
+              <a href="#projects">
+                <button
+                  class="px-4 sm:px-6 py-2 m-0.5 border-2 border-transparent rounded-full bg-main uppercase font-bold text-sm sm:text-lg">
+                  See my projects
+                </button>
+            </span>
+            <svg class="w-8 h-8 -mx-3" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M43.8333 18.5L2.16663 18.5M43.8333 18.5L27.1666 35.1667M43.8333 18.5L27.1666 1.83333"
+                stroke="#FFFBEB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            </a>
           </div>
-          
-        </section>
-      </main>
-      <footer class="footer">Website created by &#169; Richard Quigley 2021</footer>
+
+          <div class="hidden mx-5 mt-20 lg:flex">
+            <div
+              class="grid items-center justify-center grid-cols-3 px-10 py-5 divide-x rounded-full divide-stone-600 text-stone-900 bg-gradient-to-r from-dark-gold via-light-gold to-dark-gold">
+              <div class="p-2">
+                <div class="flex">
+                  <svg class="w-12 h-12 mr-2" viewBox="0 0 41 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.5 0.833344C31.7759 0.833344 40.9167 9.9742 40.9167 21.25C40.9167 24.6593 40.0834 27.8717 38.604 30.6983L20.5 62.0833L2.81545 31.4595C1.07504 28.4542 0.083374 24.9693 0.083374 21.25C0.083374 9.9742 9.22423 0.833344 20.5 0.833344ZM20.5 6.66668C12.4459 6.66668 5.91671 13.1959 5.91671 21.25C5.91671 23.566 6.45099 25.7882 7.46204 27.7943L7.95203 28.6893L20.5 50.4167L33.1367 28.5362C34.4072 26.3423 35.0834 23.8555 35.0834 21.25C35.0834 13.1959 28.5542 6.66668 20.5 6.66668ZM20.5 12.5C25.3325 12.5 29.25 16.4175 29.25 21.25C29.25 26.0825 25.3325 30 20.5 30C15.6675 30 11.75 26.0825 11.75 21.25C11.75 16.4175 15.6675 12.5 20.5 12.5ZM20.5 18.3333C18.8892 18.3333 17.5834 19.6392 17.5834 21.25C17.5834 22.8608 18.8892 24.1667 20.5 24.1667C22.1109 24.1667 23.4167 22.8608 23.4167 21.25C23.4167 19.6392 22.1109 18.3333 20.5 18.3333Z"
+                      fill="#44403C" />
+                  </svg>
+                  <div>
+                    <h3 class="text-3xl font-bold">Location</h3>
+                    <p class="text-lg">Glasgow, working fully remote for over a year</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-2">
+                <div class="flex">
+                  <svg class="w-10 h-10 mr-2" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32.1458 12.4792C33.958 12.8327 35.7569 13.6319 37.0625 14.9375C38.368 16.2431 39.1672 18.042 39.5208 19.8542M33.375 3.875C37.14 4.29326 40.528 6.11471 43.2083 8.79167C45.8886 11.4686 47.702 14.8605 48.125 18.625M48.1236 37.0051V43.6666C48.134 46.2131 45.8443 48.3395 43.2733 48.1077C21.0835 48.125 3.87512 30.7568 3.89249 8.71591C3.66094 6.15866 5.77683 3.87761 8.32005 3.87522H14.9948C16.0745 3.86461 17.1213 4.24621 17.94 4.9489C20.2676 6.94667 21.7647 13.7274 21.1887 16.423C20.739 18.5276 18.6175 19.9999 17.1752 21.4394C20.3425 26.9985 24.9545 31.6014 30.5246 34.7624C31.9669 33.323 33.4422 31.2057 35.551 30.7568C38.2561 30.1811 45.0804 31.6803 47.0702 34.0241C47.7758 34.8552 48.1507 35.9161 48.1236 37.0051Z"
+                      stroke="#44403C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <div>
+                    <h3 class="text-3xl font-bold">Give Me a Shout</h3>
+                    <p class="text-lg">Let's connect on LinkedIn and have a chat</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-2">
+                <div class="flex items-center justify-center">
+
+                  <svg class="w-12 h-12 mr-2" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.41825 14.3349C9.90836 13.8448 10.5854 13.5417 11.3333 13.5417H54.6667C55.4146 13.5417 56.0916 13.8448 56.5817 14.3349M9.41825 14.3349C8.92814 14.825 8.625 15.5021 8.625 16.25V48.75C8.625 50.2458 9.83756 51.4583 11.3333 51.4583H54.6667C56.1624 51.4583 57.375 50.2458 57.375 48.75V16.25C57.375 15.5021 57.0719 14.825 56.5817 14.3349M9.41825 14.3349L29.1698 34.0864C31.2852 36.2017 34.7148 36.2017 36.8302 34.0864L56.5817 14.3349"
+                      stroke="#44403C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <div>
+                    <h3 class="text-3xl font-bold">Send Me a Message</h3>
+                    <p class="text-lg">Use the <a href="#contact">contact</a> from below or email <a class="underline"
+                        href="mailto:richard@rqwebdev.com">
+                        richard@rqwebdev.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+    </header>
+    <main class="mt-8 sm:p-8">
+      <section>
+        <div>
+          <h2 id="introduction" class="my-3 text-2xl font-bold uppercase sm:text-4xl">Introduction</h2>
+          <h2 class="font-light uppercase sm:text-4xl">About me</h2>
+        </div>
+      </section>
+
+  </div>
+
+
+
+  <!-- PROJECTS -->
+  <section>
+    <div>
+      <h1 id="projects" class="text-2xl font-bold uppercase sm:text-4xl">Projects</h1>
+      <div id="inject-projects"></div>
     </div>
-  </body>
-  <script>
+  </section>
+  <!-- PROJECTS -->
 
-    // open json file and get data
-    const setProjects = async () => {
-      const response = await fetch('./projects.json');
-      const data = await response.json();
-      const projectSection = document.getElementById('inject-projects');
+  <!-- CONTACT -->
+  <section>
+    <h1 id="contact" class="text-2xl font-bold uppercase sm:text-4xl">Contact</h1>
+  </section>
 
-      
+  </main>
 
-      projectSection.innerHTML = data.projects.map(project => {
-        return (
-           `<div class="card">
+  <footer class="footer">Website created by &#169; Richard Quigley 2023</footer>
+  <!-- BIG ASS CIRCLES -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden list-none -z-10">
+    <li
+      class="absolute border-4 rounded-full opacity-40 w-96 sm:w-192 border-circle-gold-light left-40 h-96 top-40 sm:h-192 animate-circle1">
+    </li>
+    <li
+      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 bottom-40 h-96 sm:h-192 animate-circle2">
+    </li>
+  </div>
+  <!-- BIG ASS CIRCLES -->
+</body>
+<script>
+  // open json file and get data
+  const setProjects = async () => {
+    const response = await fetch("./projects.json");
+    const data = await response.json();
+    const projectSection = document.getElementById("inject-projects");
+
+    projectSection.innerHTML = data.projects
+      .map((project) => {
+        return `<div class="card">
                     <a 
                     href=${project.website}
                     target="_blank"
@@ -139,10 +229,11 @@
                               ></path>
                       </svg>
                         &nbsp; Website</a>
-                  </div>`
-        )
-      }).join('')
-    };
-    setProjects()
-  </script>
+                  </div>`;
+      })
+      .join("");
+  };
+  // setProjects();
+</script>
+
 </html>
