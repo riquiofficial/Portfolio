@@ -32,6 +32,14 @@
       "description": "Web app that logs bugs in your individual projects. Users can create teams and invite other users to their teams. The app was created using Python Django, Django Rest Framework and JavaScript",
       "github": "https://github.com/riquiofficial/bugtracer",
       "website": "https://bug-tracer.onrender.com"
+    },
+    {
+      "id": 5,
+      "name": "Mobilise",
+      "image": "./images/mobilise.png",
+      "description": "Recruitment app for renewable contractors to get jobs. Created using Python Django, Django Rest Framework and React",
+      "github": "",
+      "website": "https://app.mobilise.app"
     }
   ]
 }
