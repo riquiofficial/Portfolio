@@ -6,12 +6,18 @@ module.exports = {
       sans: ["Open Sans", "sans-serif"],
     },
     extend: {
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
+      backgroundPosition: {
+        "pos-0": "0% 0%",
+        "pos-100": "100% 100%",
+      },
       colors: {
         "light-gold": "#EADECC",
         "dark-gold": "#958565",
         "circle-gold-dark": "#AF9C76",
         "circle-gold-light": "#DFCEB3",
-        "dark-card": "#292524",
       },
       animation: {
         circle1: "circle1 100s ease-in-out infinite",
