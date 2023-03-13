@@ -27,22 +27,22 @@
 </head>
 
 <body class="relative text-white bg-main">
-  <div class="m-4 sm:m-8 md:mx-10 lg:mx-20">
+  <div class="m-4 sm:m-8 md:mx-10 lg:mx-20 animate-fadeIn">
     <header id="header" class="min-h-screen">
       <div class="flex flex-row items-center justify-between my-4">
         <h1 class="p-2 cursor-pointer sm:p-4 logo">RQ</h1>
         <nav>
           <ul class="flex items-center text-sm font-medium sm:text-lg">
             <a href="#introduction">
-              <li class="p-2 cursor-pointer">About</li>
+              <li class="p-2 transition duration-300 cursor-pointer hover:scale-105">About</li>
             </a>
 
             <a href="#projects">
-              <li class="p-2 cursor-pointer">Projects</li>
+              <li class="p-2 transition duration-300 cursor-pointer hover:scale-105">Projects</li>
             </a>
             <li class="py-2 cursor-pointer md:px-2">
               <div
-                class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white">
+                class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r hover:scale-105 from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white">
                 <a href="#contact">
                   <button class="px-2 sm:px-4 py-1 m-0.5 border-2 border-transparent rounded-full bg-main">
                     Contact
@@ -143,25 +143,32 @@
 
     <main class="mt-8">
       <section class="min-h-screen">
-        <div>
-          <h2 id="introduction" class="my-3 text-2xl font-bold uppercase sm:text-4xl">Introduction</h2>
-          <div class="flex items-center">
-            <h2 class="relative font-light uppercase md:flex sm:text-4xl">About me</h2>
-            <span class="ml-4">
-              <svg class="w-full" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M198.833 50L157.167 50M198.833 50L182.167 66.6666M198.833 50L182.167 33.3333" stroke="#78716C"
-                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M157.5 50H0" stroke="#78716C" stroke-width="3" />
-              </svg>
+        <h2 id="introduction" class="my-3 text-2xl font-bold uppercase min-w-1/2 sm:text-4xl">Introduction</h2>
+        <div class="mb-10 md:flex">
+          <div class="md:mr-10">
+            <span class="flex items-center">
+
+              <h2 class="relative font-light uppercase md:flex sm:text-4xl">About me</h2>
+              <span class="ml-4">
+                <svg class="w-full" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M198.833 50L157.167 50M198.833 50L182.167 66.6666M198.833 50L182.167 33.3333"
+                    stroke="#78716C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M157.5 50H0" stroke="#78716C" stroke-width="3" />
+                </svg>
+              </span>
             </span>
+
+            <img src="./images/computer.png" alt="computer" class="max-w-sm mx-auto my-8" />
           </div>
-          <p class="sm:text-lg">After a long career as a Field Service Engineer and wanting a change, I followed my
-            passion of engineering and delved into web development. I started this path more than two years ago, and
-            already took on the lead working on my latest project, Mobilise. </p>
+
           </h2>
-          <div class="">
-            <img src="./images/computer.png" alt="computer" class="w-1/2 mx-auto my-8" />
-            <h2 class="my-2 text-2xl font-light sm:text-4xl">My Scope of Action</h2>
+          <div>
+            <p class="mb-8 text-lg sm:text-2xl">
+              After a long career as a Field Service Engineer and wanting a change, I followed my
+              passion of engineering and delved into web development. I started this path more than two years ago, and
+              already took on the lead working on my latest project, Mobilise.
+            </p>
+            <h2 class="my-8 text-2xl font-light sm:text-4xl">My Scope of Action</h2>
             <p class="sm:text-lg">Full stack development refers to the practice of developing both the front-end and
               back-end
               portions of a
@@ -173,7 +180,7 @@
             </p>
             <a href="#contact">
 
-              <div class="flex items-center mt-4">
+              <div class="flex items-center mt-8">
                 <div
                   class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white hover:mr-4">
                   <button
@@ -188,7 +195,6 @@
                 </svg>
               </div>
             </a>
-
           </div>
         </div>
       </section>
@@ -234,10 +240,10 @@
           </a>
 
         </div>
-        <div id="contact-form text-lg font-bold" class="p-4 mt-8 bg-stone-800">
+        <div id="contact-form" class="max-w-4xl p-4 mx-auto mt-8 place-content-center bg-stone-800">
           <h3 class="my-4 text-xl font-light sm:text-4xl">Send me a message</h3>
 
-          <form class="flex flex-col text-left" action="/thanks.html" name="contact" method="POST" data-netlify="true"
+          <form class="flex flex-col text-left" name="contact" method="POST" data-netlify="true"
             data-netlify-recaptcha="true">
             <div class="m-2">
               <label class="m-2" for="name">Name</label>
@@ -262,7 +268,7 @@
             <div data-netlify-recaptcha="true"></div>
             <div class="self-center">
               <button type="submit"
-                class="flex items-center justify-center p-4 m-4 mx-1 text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-lg bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
+                class="flex items-center justify-center p-4 m-4 mx-1 font-bold text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-lg bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
                 Send
               </button>
             </div>
@@ -278,19 +284,24 @@
 
   <footer class="text-xs font-light">Website created by &#169; Richard Quigley 2023</footer>
   <!-- BIG ASS CIRCLES -->
-  <div class="absolute top-0 left-0 w-full h-full overflow-hidden list-none -z-10">
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden list-none animate-fadeIn -z-10">
     <li
-      class="absolute border-4 rounded-full opacity-40 w-96 sm:w-192 border-circle-gold-light left-40 h-96 top-40 sm:h-192 animate-circle1">
+      class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-light left-40 h-96 top-40 sm:h-192 animate-circle1">
     </li>
     <li
-      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 bottom-40 h-96 sm:h-192 animate-circle2">
+      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 top-96 h-96 sm:h-192 animate-circle2">
+    </li>
+    <li
+      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-light left-40 h-96 bottom-96 sm:h-192 animate-circle1">
+    </li>
+    <li
+      class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-dark -left-10 bottom-40 h-96 sm:h-192 animate-circle2">
     </li>
   </div>
   <!-- BIG ASS CIRCLES -->
 
-  <!-- transition-all duration-300 ease-in-out delay-150 from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 -->
-
 </body>
+
 <script>
   // open json file and get data
   const setProjects = async () => {
@@ -311,11 +322,14 @@
                       style="background-image: url(${project.image})"
                       ></div>
                     </a>
-
                     <div class="p-4">
-                    <h2 class="text-2xl font-bold uppercase sm:text-4xl">
-                      ${project.name}
-                    </h2>
+                      <a 
+                    href=${project.website}
+                    target="_blank">
+                      <h2 class="text-2xl font-bold uppercase sm:text-4xl">
+                        ${project.name}
+                      </h2>
+                    </a>
                     <p class="font-light uppercase">
                       ${project.tech}
                     </p>
