@@ -1,9 +1,19 @@
 {
   "projects": [
     {
+      "id": 5,
+      "name": "Mobilise",
+      "image": "./images/mobilise.png",
+      "tech": "Python Django, Django Rest Framework, React, Axios, Redux, react-router, react-query, tailwindcss, Postgres and more",
+      "description": "Recruitment app for renewable contractors to get jobs. Created using Python Django, Django Rest Framework and React",
+      "github": "",
+      "website": "https://app.mobilise.app"
+    },
+    {
       "id": 0,
       "name": "Murphy Gardens",
       "image": "./images/project1-min.jpg",
+      "tech": "React, SCSS, React Router, Framer Motion",
       "description": "React build for a local business. A static site with added page animations and react-router. CSS was made using BEM methodology and the app is split into multiple pages and components for improved organisation and scalability.",
       "github": "https://github.com/riquiofficial/murphy-gardens-react",
       "website": "https://www.murphygardens.co.uk/"
@@ -12,6 +22,7 @@
       "id": 1,
       "name": "Quigley Photography",
       "image": "./images/rqphot.png",
+      "tech": "React, SCSS, React Router, Framer Motion",
       "description": "Mockup of a Photography website. Built using React, SCSS through Styled Components and React Router. Animations were built using Framer Motion and all photos sourced from Pexels. This resulted in a fast, responsive, high quality website.",
       "github": "https://github.com/riquiofficial/rqphotography",
       "website": "https://rqphotograpy.netlify.app/"
@@ -21,6 +32,7 @@
       "id": 3,
       "name": "FilmTaster",
       "image": "./images/filmtaster.webp",
+      "tech": "React, SCSS, Redux, Styled Components",
       "description": "Web app that connects to an API and displays the data to the end user in a pleasant way. Uses CSS grid/SCSS through Styled-Components and React with Redux",
       "github": "https://github.com/riquiofficial/filmtaster",
       "website": "https://www.film-taster.com"
@@ -29,6 +41,7 @@
       "id": 4,
       "name": "Bugtracer",
       "image": "./images/bugtracer.png",
+      "tech": "Python Django, Django Rest Framework, JavaScript, Bootstrap",
       "description": "Web app that logs bugs in your individual projects. Users can create teams and invite other users to their teams. The app was created using Python Django, Django Rest Framework and JavaScript",
       "github": "https://github.com/riquiofficial/bugtracer",
       "website": "https://bug-tracer.onrender.com"

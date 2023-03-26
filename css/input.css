@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-main {
+  background-color: #1b1917;
+}
+
+.logo {
+  font-family: "aldrich", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -0.26em;
+  color: #fafaf9;
+}
+
+* {
+  scroll-behavior: smooth;
+}
