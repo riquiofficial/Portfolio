@@ -11,8 +11,8 @@
   <meta name="author" content="Richard Quigley" />
   <meta name="keywords" content="Richard Quigley, Portfolio, Web Development, Skills, Projects" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="image" property="og:image" content="https://www.rqwebdev.com/images/screenshot.png" />
-  <meta name="image" property="og:image:secure_url" content="https://www.rqwebdev.com/images/screenshot.png" />
+  <meta name="image" property="og:image" content="https://www.rqwebdev.com/images/screenshot.webp" />
+  <meta name="image" property="og:image:secure_url" content="https://www.rqwebdev.com/images/screenshot.webp" />
   <meta charset="UTF-8" />
   <meta name="theme-color" content="#000000" />
   <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
@@ -23,24 +23,26 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com" as="font" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="font" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet" />
-  <link id="shortcut icon" href="favicon.ico" rel="icon" type="image/x-icon" />
+  <link id="shortcut icon" href="/images/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
 </head>
 
 <body class="relative text-white bg-main">
-  <div class="m-4 sm:m-8 md:mx-10 lg:mx-20 animate-fadeIn">
+  <div class="m-4 sm:m-8 md:mx-10 lg:mx-20">
     <header id="header" class="flex flex-col justify-around min-h-screen">
 
       <div class="flex flex-row items-center justify-between mb-auto">
         <h1 class="p-2 cursor-pointer sm:p-4 logo">RQ</h1>
         <nav>
           <ul class="flex items-center text-sm font-medium sm:text-lg">
-            <a href="#introduction">
-              <li class="p-2 transition duration-300 cursor-pointer hover:scale-105">About</li>
-            </a>
 
-            <a href="#projects">
-              <li class="p-2 transition duration-300 cursor-pointer hover:scale-105">Projects</li>
-            </a>
+            <li class="p-2 transition duration-300 cursor-pointer hover:scale-105">
+              <a href="#introduction">About</a>
+            </li>
+            <li class="p-2 transition duration-300 cursor-pointer hover:scale-105"><a href="#projects">Projects</a></li>
             <li class="py-2 cursor-pointer md:px-2">
               <div
                 class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r hover:scale-105 from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white">
@@ -63,7 +65,7 @@
           Richard Quigley
         </h1>
         <img class="absolute top-0 hidden rounded-t-lg rounded-br-lg w-52 h-52 xl:block rounded-bl-3xl right-10"
-          src="./images/correct.png" alt="profile image" />
+          src="./images/correct.webp" alt="profile image" />
         <h2 class="mt-4 mb-8 text-2xl font-bold sm:text-4xl">Full-stack Web Developer</h2>
         <p class="text-1xl sm:text-2xl">
           Based in Glasgow, UK, I'm a software developer open to new opportunities
@@ -167,22 +169,20 @@
               </span>
             </span>
 
-            <img src="./images/computer.png" alt="computer" class="max-w-sm mx-auto my-8" />
+            <img src="./images/computer.webp" alt="computer" class="mx-auto my-8 w-96" />
           </div>
 
           </h2>
-          <div class="flex flex-col justify-around">
+          <div class="flex flex-col justify-around max-w-3xl mx-auto">
 
             <p class="mb-8 text-lg sm:text-2xl">
               After a long career as a Field Service Engineer and wanting a change, I followed my
-              passion of engineering and delved into web development. I started this path more than two years ago, and
+              passion of engineering and delved into web development. I started this path more than three years ago, and
               already took on the lead working on my latest project, Mobilise.
             </p>
             <h2 class="mb-8 text-2xl font-light sm:text-4xl">My Scope of Action</h2>
             <p class="sm:text-lg">Full stack development refers to the practice of developing both the
-              front-end and
-              back-end
-              portions of a
+              front-end and back-end portions of a
               web application. The front-end, or client-side, is the portion of the application that the user interacts
               with, and is usually developed using technologies such as HTML, CSS, and JavaScript. The back-end, or
               server-side, is the portion of the application that handles logic and data storage, and is typically
@@ -276,7 +276,7 @@
             <textarea class="w-full px-4 py-2 border rounded-lg bg-stone-800" name="message"
               placeholder="Tell me something..." required></textarea>
 
-            <div data-netlify-recaptcha="true"></div>
+            <div class="mt-2" data-netlify-recaptcha="true"></div>
             <div class="self-center">
               <button type="submit"
                 class="flex items-center justify-center px-8 py-4 m-4 mx-1 font-bold text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
@@ -297,19 +297,21 @@
     reserved
   </footer>
   <!-- BIG ASS CIRCLES -->
-  <div class="absolute top-0 left-0 w-full h-full overflow-hidden list-none animate-fadeIn -z-10">
-    <li
-      class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-light left-40 h-96 top-40 sm:h-192 animate-circle1">
-    </li>
-    <li
-      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 top-96 h-96 sm:h-192 animate-circle2">
-    </li>
-    <li
-      class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-light left-40 h-96 bottom-96 sm:h-192 animate-circle1">
-    </li>
-    <li
-      class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-dark -left-10 bottom-40 h-96 sm:h-192 animate-circle2">
-    </li>
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden list-none -z-10">
+    <ul>
+      <li
+        class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-light left-40 h-96 top-40 sm:h-192 animate-circle1">
+      </li>
+      <li
+        class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 top-96 h-96 sm:h-192 animate-circle2">
+      </li>
+      <li
+        class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-light left-40 h-96 bottom-96 sm:h-192 animate-circle1">
+      </li>
+      <li
+        class="absolute border-4 rounded-full opacity-20 w-96 sm:w-192 border-circle-gold-dark -left-10 bottom-40 h-96 sm:h-192 animate-circle2">
+      </li>
+    </ul>
   </div>
   <!-- BIG ASS CIRCLES -->
 

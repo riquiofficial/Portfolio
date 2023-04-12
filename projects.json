@@ -3,7 +3,7 @@
     {
       "id": 5,
       "name": "Mobilise",
-      "image": "./images/mobilise.png",
+      "image": "./images/mobilise.webp",
       "tech": "Python Django, Django Rest Framework, React, Axios, Redux, react-router, react-query, tailwindcss, Postgres and more",
       "description": "Recruitment app for renewable contractors to get jobs. Created using Python Django, Django Rest Framework and React",
       "github": "",
@@ -21,7 +21,7 @@
     {
       "id": 1,
       "name": "Quigley Photography",
-      "image": "./images/rqphot.png",
+      "image": "./images/rqphot.webp",
       "tech": "React, SCSS, React Router, Framer Motion",
       "description": "Mockup of a Photography website. Built using React, SCSS through Styled Components and React Router. Animations were built using Framer Motion and all photos sourced from Pexels. This resulted in a fast, responsive, high quality website.",
       "github": "https://github.com/riquiofficial/rqphotography",
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "name": "Bugtracer",
-      "image": "./images/bugtracer.png",
+      "image": "./images/bugtracer.webp",
       "tech": "Python Django, Django Rest Framework, JavaScript, Bootstrap",
       "description": "Web app that logs bugs in your individual projects. Users can create teams and invite other users to their teams. The app was created using Python Django, Django Rest Framework and JavaScript",
       "github": "https://github.com/riquiofficial/bugtracer",
