@@ -220,7 +220,7 @@
         <h3 class="text-xl font-light sm:text-4xl">Reach out to me on my social network</h3>
         <div class="flex justify-center mt-2">
           <!-- linkedin -->
-          <a href="https://www.linkedin.com/in/richard-quigley-48917a15b/" target="_blank">
+          <a href="https://www.linkedin.com/in/richard-quigley-48917a15b/" aria-label="LinkedIn" target="_blank">
             <svg
               class="w-10 mx-2 transition duration-300 md:w-20 hover:scale-110 md:my-4 fill-amber-50 hover:fill-amber-100"
               viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +229,7 @@
             </svg>
           </a>
           <!-- facebook -->
-          <a href="https://www.facebook.com/rqwebdev/" target="_blank">
+          <a href="https://www.facebook.com/rqwebdev/" aria-label="Facebook" target="_blank">
             <svg
               class="w-10 mx-2 transition duration-300 hover:scale-110 md:w-20 md:my-4 fill-amber-50 hover:fill-amber-100"
               viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +238,7 @@
             </svg>
           </a>
           <!-- twitter -->
-          <a href="https://mobile.twitter.com/rqwebdev" target="_blank">
+          <a href="https://mobile.twitter.com/rqwebdev" aria-label="Twitter" target="_blank">
             <svg
               class="w-10 mx-2 transition duration-300 hover:scale-110 md:w-20 md:my-4 fill-amber-50 hover:fill-amber-100"
               viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,6 +328,7 @@
       .map((project) => {
         return `<div class="col-span-1 overflow-hidden rounded-lg bg-stone-800">
                     <a 
+                    aria-label="project.name"
                     href=${project.website}
                     target="_blank">
                     <div
