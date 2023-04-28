@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "id": 6,
+      "name": "LogicStack",
+      "image": "./images/logicstack.webp",
+      "tech": "NextJs, Cypress, prismjs, MDX (mdxjs), Tailwindcss, Renovate",
+      "description": "Blog site",
+      "github": "https://github.com/riquiofficial/LogicStack",
+      "website": "https://www.logic-stack.com"
+    },
+    {
       "id": 5,
       "name": "Mobilise",
       "image": "./images/mobilise.webp",
@@ -27,7 +36,6 @@
       "github": "https://github.com/riquiofficial/rqphotography",
       "website": "https://rqphotograpy.netlify.app/"
     },
-
     {
       "id": 3,
       "name": "FilmTaster",
