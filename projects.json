@@ -1,16 +1,7 @@
 {
   "projects": [
     {
-      "id": 6,
-      "name": "LogicStack",
-      "image": "./images/logicstack.webp",
-      "tech": "NextJs, Cypress, prismjs, MDX (mdxjs), Tailwindcss, Renovate",
-      "description": "Blog site",
-      "github": "https://github.com/riquiofficial/LogicStack",
-      "website": "https://www.logic-stack.com"
-    },
-    {
-      "id": 5,
+      "id": 0,
       "name": "Mobilise",
       "image": "./images/mobilise.webp",
       "tech": "Python Django, Django Rest Framework, React, Axios, Redux, react-router, react-query, tailwindcss, Postgres and more",
@@ -19,7 +10,7 @@
       "website": "https://www.youtube.com/watch?v=lrmWzKF1gIU&t=19s"
     },
     {
-      "id": 0,
+      "id": 1,
       "name": "Murphy Gardens",
       "image": "./images/project1-min.jpg",
       "tech": "React, SCSS, React Router, Framer Motion",
@@ -28,8 +19,17 @@
       "website": "https://www.murphygardens.co.uk/"
     },
     {
-      "id": 1,
-      "name": "Quigley Photography",
+      "id": 2,
+      "name": "Xel Services",
+      "image": "./images/xelservices.webp",
+      "tech": "Wordpress, Yoast, Elementor, WPForms",
+      "description": "Wordpress build for a local business. Website was made with performance SEO in mind. The site is fully responsive and has a contact form build with WPForms.",
+      "github": "",
+      "website": "https://xel.services"
+    },
+    {
+      "id": 3,
+      "name": "RQ Photography",
       "image": "./images/rqphot.webp",
       "tech": "React, SCSS, React Router, Framer Motion",
       "description": "Mockup of a Photography website. Built using React, SCSS through Styled Components and React Router. Animations were built using Framer Motion and all photos sourced from Pexels. This resulted in a fast, responsive, high quality website.",
@@ -37,7 +37,7 @@
       "website": "https://rqphotograpy.netlify.app/"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "FilmTaster",
       "image": "./images/filmtaster.webp",
       "tech": "React, SCSS, Redux, Styled Components",
@@ -46,13 +46,22 @@
       "website": "https://www.film-taster.com"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Bugtracer",
       "image": "./images/bugtracer.webp",
       "tech": "Python Django, Django Rest Framework, JavaScript, Bootstrap",
       "description": "Web app that logs bugs in your individual projects. Users can create teams and invite other users to their teams. The app was created using Python Django, Django Rest Framework and JavaScript",
       "github": "https://github.com/riquiofficial/bugtracer",
       "website": "https://bug-tracer.onrender.com"
+    },
+    {
+      "id": 6,
+      "name": "LogicStack",
+      "image": "./images/logicstack.webp",
+      "tech": "NextJs, Cypress, prismjs, MDX (mdxjs), Tailwindcss, Renovate",
+      "description": "Blog site",
+      "github": "https://github.com/riquiofficial/LogicStack",
+      "website": "https://www.logic-stack.com"
     }
   ]
 }
