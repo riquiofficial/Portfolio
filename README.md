@@ -1,3 +1,3 @@
 # Portfolio
 
-Extremely basic website portfolio built on html and css - nothing else required
+Website portfolio built with html, JS and Tailwindcss - nothing else required
