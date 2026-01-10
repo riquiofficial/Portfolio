@@ -38,16 +38,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
     crossorigin="anonymous" />
-  <link href="/css/output.css" rel="stylesheet" />
+  <link href="css/output.css" rel="stylesheet" />
   <!-- <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
     rel="stylesheet" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
 
-  <link id="shortcut icon" href="/images/favicon/favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link id="shortcut icon" href="images/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Richard Quigley",
+    "url": "https://www.rqwebdev.com",
+    "jobTitle": "Full-stack Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "VSWare"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Glasgow",
+      "addressCountry": "UK"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/richard-quigley-48917a15b/",
+      "https://www.facebook.com/rqwebdev/",
+      "https://mobile.twitter.com/rqwebdev",
+      "https://github.com/riquiofficial"
+    ],
+    "knowsAbout": ["TypeScript", "React", "React Native", "Python", "Django", "Web Development"]
+  }
+  </script>
 </head>
 
 <body class="relative text-white bg-main">
@@ -94,9 +120,9 @@
         <p class="text-1xl sm:text-2xl">
           Based in Glasgow, UK, I'm a software developer open to new opportunities
         </p>
-        <span class="text-xs">Current role - Frontend and Mobile Developer Contractor at <a
+        <span class="text-xs lg:text-sm xl:text-base">Current role - Frontend and Mobile Developer Contractor at <a
             href="https://vsware.ie">VSWare</a>.</span>
-        <span class="text-xs">Tech Stack: TypeScript/React, React Native, Expo</span>
+        <span class="text-xs lg:text-sm xl:text-base">Tech Stack: TypeScript/React, React Native, Expo</span>
         <div class="flex items-center mt-8">
           <span
             class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white hover:mr-4">
@@ -109,7 +135,6 @@
             <path d="M43.8333 18.5L2.16663 18.5M43.8333 18.5L27.1666 35.1667M43.8333 18.5L27.1666 1.83333"
               stroke="#FFFBEB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          </a>
         </div>
       </div>
 
@@ -181,54 +206,52 @@
     <main class="mt-8">
       <section class="">
         <h2 id="introduction" class="my-3 text-2xl font-bold uppercase min-w-1/2 sm:text-4xl">Introduction</h2>
-        <div class="mb-10 md:flex">
-          <div class="md:mr-10">
-            <span class="flex items-center">
-
-              <h2 class="relative font-light uppercase md:flex sm:text-4xl">About me</h2>
-              <span class="ml-4">
-                <svg class="w-full" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M198.833 50L157.167 50M198.833 50L182.167 66.6666M198.833 50L182.167 33.3333"
-                    stroke="#78716C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M157.5 50H0" stroke="#78716C" stroke-width="3" />
-                </svg>
+        <div class="w-full max-w-4xl lg:max-w-6xl xl:max-w-7xl p-4 lg:p-8 xl:p-12 mx-auto bg-stone-800 rounded-lg">
+          <div class="md:flex lg:items-center lg:gap-16">
+            <div class="md:mr-10 flex-shrink-0">
+              <span class="flex items-center">
+                <h2 class="relative font-light uppercase md:flex sm:text-4xl">About me</h2>
+                <span class="ml-4 w-24 lg:w-32">
+                  <svg class="w-full" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M198.833 50L157.167 50M198.833 50L182.167 66.6666M198.833 50L182.167 33.3333"
+                      stroke="#78716C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M157.5 50H0" stroke="#78716C" stroke-width="3" />
+                  </svg>
+                </span>
               </span>
-            </span>
 
-            <img width="384px" height="407px" src="./images/computer.webp" alt="computer" class="mx-auto my-8" />
-          </div>
+              <img width="384" height="407" src="./images/computer.webp" alt="computer" loading="lazy" class="mx-auto my-8" />
+            </div>
 
-          </h2>
-          <div class="flex flex-col justify-around max-w-3xl mx-auto">
+            <div class="flex flex-col justify-around">
+              <p class="mb-8 text-lg sm:text-2xl">
+                I'm a full stack developer based in Glasgow, Scotland, proficient in TypeScript, React and Python, Django.
+                I have a passion for translating business logic into elegant, efficient and testable code.
+              </p>
+              <h2 class="mb-8 text-2xl font-light sm:text-4xl">What I'm doing now</h2>
+              <p class="sm:text-lg"> Recently I've been studying AI and Machine Learning, learning how it works as well
+                as using existing models, and
+                find it fascinating how we can use these technologies to solve real world problems.
 
-            <p class="mb-8 text-lg sm:text-2xl">
-              I'm a full stack developer based in Glasgow, Scotland, proficient in TypeScript, React and Python, Django.
-              I have a passion for translating business logic into elegant, efficient and testable code.
-            </p>
-            <h2 class="mb-8 text-2xl font-light sm:text-4xl">What I'm doing now</h2>
-            <p class="sm:text-lg"> Recently I've been studying AI and Machine Learning, learning how it works as well
-              as using existing models, and
-              find it fascinating how we can use these technologies to solve real world problems.
-
-              The part that has me most curious right now is how models and algorithms could be used
-              inside a
-              physical device such as a robot or drone, as well as the ethics around this topic.
-            </p>
-            <div class="lg:mb-auto">
-
-              <div class="flex items-center mt-8">
-                <div
-                  class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white hover:mr-4">
-                  <a href="#contact"
-                    class="px-2 sm:px-4 py-1 m-0.5 border-2 border-transparent rounded-full bg-main uppercase text-sm sm:text-lg font-bold">
-                    Let's get in touch
-                  </a>
+                The part that has me most curious right now is how models and algorithms could be used
+                inside a
+                physical device such as a robot or drone, as well as the ethics around this topic.
+              </p>
+              <div class="lg:mb-auto">
+                <div class="flex items-center mt-8">
+                  <div
+                    class="flex transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 text-amber-50 hover:text-white hover:mr-4">
+                    <a href="#contact"
+                      class="px-2 sm:px-4 py-1 m-0.5 border-2 border-transparent rounded-full bg-main uppercase text-sm sm:text-lg font-bold">
+                      Let's get in touch
+                    </a>
+                  </div>
+                  <svg class="-mx-3 w-7 h-7 sm:w-8 sm:h-8" viewBox="0 0 46 37" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.8333 18.5L2.16663 18.5M43.8333 18.5L27.1666 35.1667M43.8333 18.5L27.1666 1.83333"
+                      stroke="#FFFBEB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
-                <svg class="-mx-3 w-7 h-7 sm:w-8 sm:h-8" viewBox="0 0 46 37" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M43.8333 18.5L2.16663 18.5M43.8333 18.5L27.1666 35.1667M43.8333 18.5L27.1666 1.83333"
-                    stroke="#FFFBEB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
               </div>
             </div>
           </div>
@@ -238,12 +261,12 @@
       <!-- PROJECTS -->
       <section class="min-h-screen mt-32">
         <h1 id="projects" class="mb-8 text-2xl font-bold uppercase sm:text-4xl">Projects</h1>
-        <div id="inject-projects" class="grid gap-4 md:grid-cols-2"></div>
+        <div id="inject-projects" class="grid gap-4 md:grid-cols-2 lg:gap-8 xl:gap-12"></div>
       </section>
       <!-- PROJECTS -->
 
       <!-- CONTACT -->
-      <section class="min-h-screen mt-32 text-center">
+      <section class="min-h-screen mt-32 text-center flex flex-col justify-center">
         <h1 id="contact" class="mb-8 text-2xl font-bold uppercase sm:text-4xl">Contact Me</h1>
         <h2 class="text-xl font-light sm:text-4xl">Reach out to me on my social network</h2>
         <div class="flex justify-center mt-2">
@@ -276,35 +299,35 @@
           </a>
 
         </div>
-        <div id="contact-form" class="max-w-4xl p-4 mx-auto mt-8 place-content-center bg-stone-800">
+        <div id="contact-form" class="w-full max-w-4xl lg:max-w-6xl xl:max-w-7xl p-4 lg:p-8 xl:p-12 mx-auto mt-8 place-content-center bg-stone-800 rounded-lg">
           <h3 class="my-4 text-xl font-light sm:text-4xl">Send me a message</h3>
 
           <form class="flex flex-col text-left" name="contact" method="POST" netlify-honeypot="bot-field"
             data-netlify="true" data-netlify-recaptcha="true">
             <div class="m-2">
-              <label class="m-2" for="name">Name</label>
-              <input class="w-full px-4 py-2 border rounded-full bg-stone-800" type="text" id="name" name="name"
+              <label class="m-2 lg:text-lg" for="name">Name</label>
+              <input class="w-full px-4 py-2 lg:px-6 lg:py-4 lg:text-lg border rounded-full bg-stone-800" type="text" id="name" name="name"
                 placeholder="James Tiberius Kirk" />
             </div>
             <div class="m-2">
-              <label class="m-2" for="email">Email</label>
-              <input class="w-full px-4 py-2 border rounded-full bg-stone-800" type="email" name="email"
+              <label class="m-2 lg:text-lg" for="email">Email</label>
+              <input class="w-full px-4 py-2 lg:px-6 lg:py-4 lg:text-lg border rounded-full bg-stone-800" type="email" id="email" name="email"
                 placeholder="email@email.com" required />
             </div>
             <div class="m-2">
-              <label class="m-2" for="phone">Phone</label>
-              <input class="w-full px-4 py-2 border rounded-full bg-stone-800" type="tel" name="phone"
+              <label class="m-2 lg:text-lg" for="phone">Phone</label>
+              <input class="w-full px-4 py-2 lg:px-6 lg:py-4 lg:text-lg border rounded-full bg-stone-800" type="tel" id="phone" name="phone"
                 placeholder="+44..." />
             </div>
             <br />
-            <label class="m-2" for="message">Your Message</label>
-            <textarea class="w-full px-4 py-2 border rounded-lg bg-stone-800" name="message"
+            <label class="m-2 lg:text-lg" for="message">Your Message</label>
+            <textarea class="w-full px-4 py-2 lg:px-6 lg:py-4 lg:text-lg border rounded-lg bg-stone-800" id="message" name="message"
               placeholder="Tell me something..." required></textarea>
 
             <!-- <div class="mt-2" data-netlify-recaptcha="true"></div> -->
             <div class="self-center">
               <button type="submit"
-                class="flex items-center justify-center px-8 py-4 m-4 mx-1 font-bold text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
+                class="flex items-center justify-center px-8 py-4 lg:px-12 lg:py-5 lg:text-lg m-4 mx-1 font-bold text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-full bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
                 Send
               </button>
             </div>
@@ -318,7 +341,7 @@
   </div>
 
 
-  <footer class="pb-4 text-sm font-bold text-center uppercase text-stone-400">2023 &#169; by Richard Quigley - all
+  <footer class="pb-4 text-sm font-bold text-center uppercase text-stone-400"><span id="year"></span> &#169; by Richard Quigley - all
     rights
     reserved
   </footer>
@@ -330,6 +353,13 @@
       </li>
       <li
         class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark -left-10 top-96 h-96 sm:h-192 animate-circle2">
+      </li>
+      <!-- Introduction section circles -->
+      <li
+        class="absolute border-4 rounded-full opacity-15 w-96 sm:w-192 border-circle-gold-light right-20 h-96 top-[140vh] sm:h-192 animate-circle2">
+      </li>
+      <li
+        class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-dark right-60 h-96 top-[160vh] sm:h-192 animate-circle1">
       </li>
       <li
         class="absolute border-4 rounded-full opacity-10 w-96 sm:w-192 border-circle-gold-light left-40 h-96 bottom-96 sm:h-192 animate-circle1">
@@ -343,102 +373,6 @@
 
 </body>
 
-<script>
-  // open json file and get data
-  const setProjects = async () => {
-    const response = await fetch("./projects.json");
-    const data = await response.json();
-    const projectSection = document.getElementById("inject-projects");
-
-
-
-    projectSection.innerHTML = data.projects
-      .map((project) => {
-        return `<div class="col-span-1 overflow-hidden rounded-lg bg-stone-800">
-                    <a 
-                    aria-label=${project.name}
-                    href=${project.website}
-                    target="_blank">
-                    <div
-                      class="w-full transition-all duration-300 bg-cover h-72 hover:bg-right"
-                      style="background-image: url(${project.image})"
-                      ></div>
-                    </a>
-                    <div class="p-4">
-                      <a 
-                    href=${project.website}
-                    target="_blank">
-                      <h2 class="text-2xl font-bold uppercase sm:text-4xl">
-                        ${project.name}
-                      </h2>
-                    </a>
-                    <p class="font-light uppercase">
-                      ${project.tech}
-                    </p>
-                    <p class="mt-2 font-light">
-                      ${project.description}
-                    </p>
-                    <div class="flex mt-6 font-bold">
-                      <div class="transition-all duration-300 ease-in-out delay-150 rounded-lg hover:text-amber-50 bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200">
-                        <button class="flex p-4 m-0.5 uppercase border-2 border-transparent rounded-lg bg-stone-800">
-                          <a
-                            target="_blank"
-                            href=${project.website}
-                            class="flex"
-                            >
-                              See Live
-                              <span class="flex items-center justify-center ml-2">
-                                <svg
-                                    stroke="currentColor"
-                                    fill="currentColor"
-                                    stroke-width="0"
-                                    viewBox="0 0 640 512"
-                                    height="1em"
-                                    width="1em"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"
-                                        ></path>
-                                </svg>
-                              </span>
-                          </a>
-                        </button>
-                      </div>
-                        ${project.github ? `
-                      <button class="flex items-center justify-center p-4 mx-1 text-black uppercase transition-all duration-300 ease-in-out delay-150 rounded-lg bg-gradient-to-r from-light-gold via-dark-gold to-stone-500 bg-pos-0 hover:bg-pos-100 bg-size-200 hover:text-amber-50">
-                          <a
-                        target="_blank"
-                        href=${project.github}
-                        class="flex"
-                        >
-                              See on Github
-                              <span class="flex items-center justify-center ml-2">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                stroke-width="0"
-                                viewBox="0 0 480 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
-                                ></path>
-                              </svg>
-                              </span>
-                        </a>
-                      </button>
-                        ` : ""}
-                       
-                      </div>
-                      </div>
-                  </div>`;
-      })
-      .join("");
-  };
-  setProjects();
-</script>
+<script src="js/main.js"></script>
 
 </html>

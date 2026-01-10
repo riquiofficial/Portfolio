@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:css": "npx tailwindcss -i css/input.css -o css/output.css -m -w"
+    "watch:css": "npx tailwindcss -i css/input.css -o css/output.css -m -w",
+    "build:css": "npx tailwindcss -i css/input.css -o css/output.css -m",
+    "build:js": "npx terser js/main.js -o js/main.min.js -c -m",
+    "build": "npm run build:css && npm run build:js",
+    "lint": "npx eslint js/",
+    "lint:fix": "npx eslint js/ --fix",
+    "format": "npx prettier --write \"**/*.{js,json,html,css}\""
   },
   "repository": {
     "type": "git",
@@ -26,5 +32,10 @@
   "homepage": "https://github.com/riquiofficial/Portfolio#readme",
   "dependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "terser": "^5.27.0"
   }
 }
