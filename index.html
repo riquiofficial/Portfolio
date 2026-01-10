@@ -304,6 +304,9 @@
 
           <form class="flex flex-col text-left" name="contact" method="POST" data-netlify-honeypot="bot-field"
             data-netlify="true" action="/">
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="m-2">
               <label class="m-2 lg:text-lg" for="name">Name</label>
               <input class="w-full px-4 py-2 lg:px-6 lg:py-4 lg:text-lg border rounded-full bg-stone-800" type="text" id="name" name="name"
